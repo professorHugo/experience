@@ -1,6 +1,7 @@
 <h2>Documentos das aulas</h2>
 <?php
-$MatriculaLogada = $_SESSION[Login][matricula];
+echo $NomeLogado;
+$MatriculaLogada = $_SESSION['Login']['matricula'];
 $QueryAulasAssistidas = "SELECT * FROM usuarios WHERE matricula = '$MatriculaLogada'";
 $ExeQueryAulasAssistidas = mysql_query($QueryAulasAssistidas);
 if ($ExeQueryAulasAssistidas) {
